@@ -1,0 +1,7 @@
+data = open('hmmdist').read()
+dt = 0
+s,t =data.split()
+for i, c in enumerate(s):
+    if c != t[i]:
+        dt += 1
+print dt
